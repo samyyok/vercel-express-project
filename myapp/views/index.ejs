@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Gimme info <%= title %></p>
+    <div>
+      <form action="/register/user" method="POST">
+      <input type="text" name="name" placeholder="Bomboclatt"/><br />
+      <input type="text" name="occupation" placeholder="Job innit?"/><br />
+      <input type="submit" value="Sign up"/><br />
+      </form>
+    </div>
+  </body>
+</html>

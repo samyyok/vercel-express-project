@@ -1,0 +1,32 @@
+<!DOCTYPE HTML >
+<html lang="en">
+   <head>
+      <title></title>
+      <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+   </head>
+   <body class="container">
+    
+    
+    <h1>Profiles</h1>
+    <span><%= timestamp %></span>
+    <ul>
+      <% profileshere.forEach(function(key) { %>
+        <li><a href="/profile/<%=key%>"><%= key %></a></li>
+      <% }); %>
+    </ul>
+
+    
+
+   
+    <form action=" /addprofile" method="POST">
+      <input type="text" name="name" placeholder="Name"/><br/>
+      <input type="text" name="username" placeholder="Username"/><br/>
+      <input type="text" name="image" placeholder="Image (/images/example.jpg)"/><br/> 
+      <input type="text" name="company" placeholder="Company"/><br/>
+      <input type="text" name="languages" placeholder="Languages"/><br/>
+      <input type="submit"value="Submit"/><br/>
+    </form>
+     
+    
+   </body>
+</html>
